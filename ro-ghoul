@@ -25,8 +25,7 @@ local myData = loadstring(game:HttpGet("https://raw.githubusercontent.com/z4gs/s
         E = false,
         F = false,
         C = false,
-        R = false,
-        G = false
+        R = false
     },
     Boss = {
         ["Gyakusatsu"] = false,
@@ -155,11 +154,11 @@ tab2:AddSlider("TP Speed", function(x)
 end, {min = 90, max = 250}):Set(45)
 
 tab2:AddSlider("Distance from NPC", function(x)
-    myData.DistanceFromNpc = x * 100
+    myData.DistanceFromNpc = x * 8
 end, {min = 0, max = 8}):Set(100)
 
 tab2:AddSlider("Distance from Bosses", function(x)
-    myData.DistanceFromBoss = x * 100
+    myData.DistanceFromBoss = x * 30
 end, {min = 0, max = 30}):Set(100)
 
 labels.p = {label = tab3:AddLabel("Current trainer: "..player.PlayerFolder.Trainers[team.."Trainer"].Value)}
