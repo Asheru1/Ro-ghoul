@@ -34,7 +34,7 @@ local myData = loadstring(game:HttpGet("https://raw.githubusercontent.com/z4gs/s
         ["Nishiki Nishio"] = false
     },
     DistanceFromNpc = 7,
-    DistanceFromBoss = 30,
+    DistanceFromBoss = 20,
     TeleportSpeed = 150,
     ReputationFarm = false,
     ReputationCashout = false,
@@ -159,7 +159,7 @@ end, {min = 0, max = 8}):Set(100)
 
 tab2:AddSlider("Distance from Bosses", function(x)
     myData.DistanceFromBoss = x * -1
-end, {min = 0, max = 30}):Set(100)
+end, {min = 0, max = 30}):Set(67)
 
 labels.p = {label = tab3:AddLabel("Current trainer: "..player.PlayerFolder.Trainers[team.."Trainer"].Value)}
 
